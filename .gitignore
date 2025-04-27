@@ -1,0 +1,61 @@
+# .NET 8 Specific Ignores
+[Bb]in/
+[Oo]bj/
+*.csproj.user
+*.sln.docstates
+*.nuget.props
+*.nuget.targets
+global.json
+
+# Rider Specific Ignores
+.idea/
+*.iml
+
+# Visual Studio Specific Ignores
+.vs/
+*.suo
+*.user
+*.vcxproj.user
+*.vcxproj.filters
+*.vcxproj.local
+*.Build.props
+*.Build.targets
+
+# NuGet Package Cache
+packages/
+
+# Docker Specific Ignores (if not intending to commit build artifacts)
+**/bin/Release/net*/publish/  # Adjust target framework as needed
+**/bin/Debug/net*/publish/  # Adjust target framework as needed
+
+# Environment Variables and Configuration
+appsettings*.Development.json
+*.secrets.json
+*.usersecrets/
+
+# Logs and Temporary Files
+*.log
+*.tmp
+*.swp
+*.pid
+_ReSharper*/
+
+# Test Results
+TestResults/
+*.trx
+*.coverage
+*.datacollection
+
+# Build Output (redundant with bin/obj, but kept for clarity if publishing manually)
+# **/publish/
+
+# Container Registry Credentials (if any are stored locally - avoid this if possible)
+# docker-compose.override.yml
+
+# Other IDE or Tooling Specific Files (add as needed)
+# Example for VS Code:
+# .vscode/
+
+# OS Specific Files
+.DS_Store
+Thumbs.db
